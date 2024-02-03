@@ -45,16 +45,16 @@ public class MyDate {
     public static void main(String[] args) {
         MyDate date1 = new MyDate();
         System.out.println("Для первой даты (конструктор по умолчанию): " + date1.getDay() +
-                "." + date1.getMonth() + "." + date1.getYear());
+                "" + date1.getMonth() + "." + date1.getYear());
         MyDate date2 = new MyDate(34355555133101L);
         System.out.println("Для второй даты (34355555133101L): " + date2.getDay() +
-                "." + date2.getMonth() + "." + date2.getYear());
+                "" + date2.getMonth() + "." + date2.getYear());
         MyDate date3 = new MyDate(1997, 7, 22);
         System.out.println("Для третьей даты (1997, 7, 22)): " + date3.getDay() +
-                "." + date3.getMonth() + "." + date3.getYear());
+                "" + date3.getMonth() + "." + date3.getYear());
         date2.setDate(5435554433L);
         System.out.println("Для второй даты с новым значением (5435554433L): " + date2.getDay() +
-                "." + date2.getMonth() + "." + date2.getYear());
+                "" + date2.getMonth() + "." + date2.getYear());
 
     }
 }

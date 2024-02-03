@@ -20,9 +20,9 @@ class Rectangle {
        Rectangle rectangle2 = new Rectangle(3.5, 35.9);
        System.out.println("Параметры прямоугольника 1: \nВысота: " + rectangle1.height +
                "\nШирина: " + rectangle1.width + "\nПлощадь: " +
-               rectangle1.getArea() + "\nПериметр: " + rectangle1.getPerimeter() + ".\n");
+               rectangle1.getArea() + "\nПериметр: " + rectangle1.getPerimeter() + "\n");
        System.out.println("Параметры прямоугольника 2: \nВысота: " + rectangle2.height +
                "\nШирина: " + rectangle2.width + "\nПлощадь: " +
-               rectangle2.getArea() + "\nПериметр: " + rectangle2.getPerimeter() + ".\n");
+               rectangle2.getArea() + "\nПериметр: " + rectangle2.getPerimeter() + "\n");
    }
 }
