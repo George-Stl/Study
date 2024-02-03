@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Account {
     private int id = 0;
     private double balance = 0;
-    private double[] bankAccounts;
+//    private double[] bankAccounts;
     private static double annualInterestRate = 0;
     private Date dateCreated;
     public Account(){
-        bankAccounts = new double[10];
-        Arrays.fill(bankAccounts, 10_000);
+        /*bankAccounts = new double[10];
+        Arrays.fill(bankAccounts, 10_000);*/
         dateCreated = new Date();
     }
     Account(int id, double balance){
@@ -24,9 +24,8 @@ public class Account {
     public void setId(int id){
         this.id = id;
     }
-    double getBalance(int ID){
-
-        return bankAccounts[ID];
+    double getBalance(){
+        return balance;
     }
     public void setBalance(double balance){
         this.balance = balance;
@@ -43,16 +42,16 @@ public class Account {
     double getMontlyInterest(){
         return (balance * (annualInterestRate / 12 / 100));
     }
-    void withdraw(int ID, double amount){
-        this.bankAccounts[ID] -= amount;
+    void withdraw(double amount){
+        this.balance -= amount;
 
     }
-    void deposit(int ID, double amount){
-        this.bankAccounts[ID] += amount;
+    void deposit(double amount){
+        this.balance += amount;
 
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Account newAccount = new Account();
         while(true){
             System.out.print("Введите ID: ");
@@ -89,7 +88,7 @@ public class Account {
                 System.out.println("\n");
             }
 
-        }
+        }*/
 
         /*Account clientAccount = new Account(1122, 20_000);
         Account.setAnnualInterestRate(4.5);
@@ -100,4 +99,4 @@ public class Account {
                 clientAccount.getMontlyInterest() + " руб.\nДата создания счета: " +
                 clientAccount.getDateCreated());*/
     }
-}
+
